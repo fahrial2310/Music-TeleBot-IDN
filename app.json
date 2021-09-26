@@ -1,0 +1,110 @@
+{
+  "name": "AlvinMusicRobot",
+  "logo": "https://telegra.ph/file/d19b68d228e2dc46eb8f5.jpg",
+  "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by PyTgCalls.",
+  "keywords": ["music", "voicechat", "telegram"],
+  "repository": "https://github.com/fahrial2310/Music-TeleBot-IDN",
+  "stack": "heroku-20",
+  "buildpacks": [
+   {
+     "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+   },
+   {
+     "url": "heroku/python"
+   }   
+  ],        
+  "env": {
+    "SESSION_NAME": {
+      "description": "Pyrogram session string",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "token bot mu dari @BotFather",
+      "required": true
+    },
+    "BOT_USERNAME": {
+      "description": "username botmu tanpa @",
+      "required": true
+    },
+    "BOT_NAME": {
+      "description": "nama botmu.",
+      "required": true
+    },
+    "SUPPORT_GRP": {
+      "description": "username support group mu tanpa @[tinggalkan jika tidak ada]",
+      "required": false,
+      "value": "alvin_image_editor_group"
+    },
+    "SUPPORT_MODE": {
+      "description": "gunakan Support/Group/Group Support/Support Chat",
+      "required": true,
+      "value": "Support/Group/Group Support/Support Chat"
+    },
+    "PROJECT_NAME": {
+      "description": "project musicplayer mu.",
+      "required": false,
+      "value": "Alvin Junior Bot"
+    },
+    "ASSISTANT_NAME": {
+      "description": "username assistant tanpa @.",
+      "required": true
+    },
+    "ARQ_API_KEY": {
+      "description": "dapatkan di @ARQRobot.",
+      "required": false,
+      "value": ""
+    },    
+    "BG_IMAGE": {
+      "description": "BG image of bot (Use transparent one) [IGNORE].",
+      "required": false,
+      "value": "https://telegra.ph/file/b623ab3cd8caef9efff2b.jpg"
+    },     
+    "UPDATES_CH": {
+      "description": "username updates channel mu tanpa @ [tinggalkan jika tidak ada].",
+      "required": false,
+      "value": "Alvin_image_editor"
+    },     
+    "UPDATES_MODE": {
+      "description": "gunakan Updates/Channel/Updates Channel.",
+      "required": true,
+      "value": "Updates/Channel/Updates Channel"
+    },    
+    "API_ID": {
+      "description": "App ID dari my.telegram.org/apps",
+      "required": true
+    },
+    "PMPERMIT": {
+      "description": "Change to turn off",
+      "required": false,
+      "value": "ENABLE"
+    },    
+    "API_HASH": {
+      "description": "App hash dari my.telegram.org/apps",
+      "required": true
+    },
+    "SUDO_USERS": {
+      "description": "List of user IDs counted as admin everywhere (separated by space).",
+      "required": true
+    },
+    "DURATION_LIMIT": {
+      "description": "Max audio duration limit for downloads (minutes).",
+      "required": true,
+      "value": "10"
+    },
+    "CREATOR_USERNAME": {
+      "description": "username mu tanpa @",
+      "required": true,
+      "value": "alvin_junior"
+    },
+    "CREATOR_NAME": {
+      "description": "nama mu",
+      "required": true,
+      "value": "Muhammad Fahri"
+   },
+    "OWNER_MODE": {
+      "description": "gunakan Creator atau Owner",
+      "required": true,
+      "value": "Creator/Owner"   
+    }
+  }
+}
