@@ -94,7 +94,7 @@
     "CREATOR_USERNAME": {
       "description": "username mu tanpa @",
       "required": true,
-      "value": "alvin_junior"
+      "value": "Alvin_Junior"
     },
     "CREATOR_NAME": {
       "description": "nama mu",
